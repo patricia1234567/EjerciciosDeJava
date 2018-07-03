@@ -1,0 +1,28 @@
+package pkgelse;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Else {
+
+ 
+    public static void main(String[] args) {
+      Scanner entrada=new Scanner(System.in);
+      
+      String primerNumero = JOptionPane.showInputDialog("Introduce un número: ");
+      String segundoNumero = JOptionPane.showInputDialog("Introduce otro número: ");
+            
+      
+      int resultado=Integer.valueOf(primerNumero)+Integer.valueOf(segundoNumero);
+      
+      if(resultado>10){
+          JOptionPane.showMessageDialog(null, "El resultado es mayor que 10.\nResultado = "+resultado);
+      }else{
+
+               if(resultado==10){
+               JOptionPane.showMessageDialog(null, "El resultado es 10.");
+        }else{
+          JOptionPane.showMessageDialog(null, "El resultado es menor que 10.\nResultado = "+resultado);
+      }
+    }
+}
+
